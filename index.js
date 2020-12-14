@@ -9,7 +9,7 @@ var Pusher = require('pusher-js');
  * @param {String} api_key
  * @param {Object} options
  */
-function VuePusher (api_key, options) {
+function VuePusher (Pusher, api_key, options) {
     this.pusher   = new Pusher(api_key, options);
     this.channels = [];
 }
@@ -49,8 +49,8 @@ VuePusher.prototype.getChannels = function () {
 };
 
 module.exports = {
-    install: function (Vue, options) {
-        var pusher = new VuePusher(options.api_key, options.options);
+    install: function (Vue, Pusher, options) {
+        var pusher = new VuePusher(Pusher, options.api_key, options.options);
 
         Vue.prototype.pusher  = pusher;
         Vue.prototype.$pusher = pusher.pusher; // Just in case they want to manage it themselves.
