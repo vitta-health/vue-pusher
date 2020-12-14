@@ -1,5 +1,5 @@
 {
-  "name": "vue-pusher",
+  "name": "@vitta-health/vue-pusher",
   "version": "1.1.0",
   "description": "Pusher plugin for vue.js",
   "main": "index.js",
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaggy/vue-pusher.git"
+    "url": "git+https://github.com/vitta-health/vue-pusher.git"
   },
   "keywords": [
     "vuejs",
     "vue",
     "pusher"
   ],
-  "author": "Jaggy Gauran <i.am@jag,gy>",
+  "author": "Gilson F. B. Souza <gilson@vitta.com.br>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jaggy/vue-pusher/issues"
+    "url": "https://github.com/vitta-health/vue-pusher/issues"
   },
-  "homepage": "https://github.com/jaggy/vue-pusher#readme"
+  "homepage": "https://github.com/vitta-health/vue-pusher#readme"
 }
